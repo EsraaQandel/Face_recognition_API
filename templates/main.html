@@ -1,0 +1,45 @@
+<html>
+    <head>
+    
+            <title></title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- to ensure that the screen width is set to the device width and the content is rendered with this width in mind (Responsive ) -->
+    <meta charset="utf-8"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}"/>
+        <style type="text/css">
+            body
+            {
+                margin:0;
+                background-color: #e7e7e7;
+            }
+            div{
+                margin: auto;
+                margin-top:10%;
+                height: 300px;
+            }
+            .logo
+            {
+                border-radius: 20%;
+            }
+            .btn-default
+            {
+                color: #333;
+                background-color: #444;
+                border-color: #09f;
+                border-width: 3px;
+                margin-bottom: 10px;
+                width: 200px;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+   
+        {% block content %}
+        {% endblock %}
+        <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+    </body>
+</html>

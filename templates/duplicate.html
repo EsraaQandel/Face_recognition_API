@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+{% block content %}
+        <div class="text-center ">
+          <img class="logo" src="{{ url_for('static', filename='logo.png') }}" width="100" height="100"/>
+          <h2  class="text-primary">
+             <p> This ID is already Registered! <p>
+          </h2>
+          <p> Try Agian?</p>
+            <a class="btn btn-default" href="{{url_for('register')}}" role="button">Register A Student</a>
+        </div>
+{% endblock %}
